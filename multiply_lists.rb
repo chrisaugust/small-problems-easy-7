@@ -28,6 +28,8 @@ require 'test/unit'
 class MultiplyLists < Test::Unit::TestCase
   def test_multiply_lists
     assert_equal(multiply_list([3, 5, 7], [9, 10, 11]), [27, 50, 77])
+    arr1, arr2 = [1,2,3,4], [5,6,7,8]
+    assert_equal(arr1.length, multiply_list(arr1,arr2).length)
   end
 end
 
